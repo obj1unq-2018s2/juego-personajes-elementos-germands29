@@ -1,4 +1,5 @@
 object ballesta {
+	
 	var property cantidadDeFlechas = 10
 	 
 	method registrarUso(){
@@ -16,9 +17,11 @@ object ballesta {
 
 object jabalina {
 	
-	method registrarUso(){}
+	var property estaCargada = true
 	
-	method estaCargada(){}
+	method registrarUso(){estaCargada = false	}
 	
-	method potencia(){}
+	method estaCargada(){return estaCargada	}
+	
+	method potencia(){return 30}
 }

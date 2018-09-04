@@ -6,9 +6,15 @@ object castillo{
 		defensa = defensa - unNumero
 	}
 	
-	method valorQueOtorga(){}
+	method valorQueOtorga(){
+		return defensa / 5
+	}
 	
-	method recibirTrabajo(){}
+	method recibirTrabajo(){
+		if (defensa + 20 < 200){
+		defensa = defensa + 20
+		}
+	}
 }
 
 object aurora{
@@ -21,7 +27,9 @@ object aurora{
 		if(unNumero > 10){ estaViva = false }
 	}
 	
-	method valorQueOtorga(){}
+	method valorQueOtorga(){
+		return 15
+	}
 	
 	method recibirTrabajo(){}
 }
@@ -31,7 +39,7 @@ object tipa{
 	
 	method recibirAtaque(unNumero){}
 	
-	method valorQueOtorga(){}
+	method valorQueOtorga(){return altura * 2 }
 	
-	method recibirTrabajo(){}
+	method recibirTrabajo(){altura = altura + 1}
 }
