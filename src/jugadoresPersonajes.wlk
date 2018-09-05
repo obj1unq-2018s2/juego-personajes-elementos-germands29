@@ -30,12 +30,11 @@ object mario {
 	    valorRecolectado += elemento.valorQueOtorga()
 	    elemento.recibirTrabajo()
 	    ultimoElemento = elemento
-	    self.esFeliz()
 			}
 
 	method esFeliz(){
-	if (valorRecolectado > 50 || ultimoElemento.altura() > 10){}
-	}
+	return valorRecolectado > 50 or ultimoElemento.altura() > 10
+	
 }
 
 object noHayPersonaje {
